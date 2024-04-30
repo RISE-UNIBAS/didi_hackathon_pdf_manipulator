@@ -211,7 +211,7 @@ def main():
     parser.add_argument('-o', '--output-file', type=str, help='Output file', default='output.pdf')
 
     parser.add_argument('--blur', type=int, help="[0-50] Apply a blur effect to the images of the PDF.",
-                        default=0, choices=range(0, 51))
+                        default=0)
     parser.add_argument('--gray', action='store_true', help="Gray scale the images of the PDF")
     parser.add_argument('--black', action='store_true', help="Blacken the images of the PDF")
     parser.add_argument('--emboss', action='store_true',
